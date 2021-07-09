@@ -8,11 +8,30 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
+import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
+import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
+
+import Typography from '@material-ui/core/Typography';
+import DeleteIcon from '@material-ui/icons/Delete';
+import Timer from '@material-ui/icons/Timer';
+import SportsSoccerIcon from '@material-ui/icons/SportsSoccer';
+import SportsBasketballIcon from '@material-ui/icons/SportsBasketball';
+import SportsMotorsportsIcon from '@material-ui/icons/SportsMotorsports';
+import MotorcycleIcon from '@material-ui/icons/Motorcycle';
+import SportsMmaIcon from '@material-ui/icons/SportsMma';
+import SportsTennisIcon from '@material-ui/icons/SportsTennis';
+
+import HorseIcon from './Icons/HorseIcon';
+import TimerIcon from './Icons/TimerIcon';
+import EuroIcon from './Icons/EuroIcon';
+import F1Icon from './Icons/F1Icon';
+
 import './TableIcon.css';
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 650
+    minWidth: 350,
+    height: 20
   },
   cell: {
     // padding: 50,
@@ -36,8 +55,8 @@ export default function BasicTable() {
   const classes = useStyles();
 
   return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
+    <TableContainer component={Paper} className="overflow">
+      <Table className={(classes.table, 'overflow')} aria-label="simple table">
         {/* <TableHead>
           <TableRow>
             <TableCell>Dessert (100g serving)</TableCell>
@@ -61,30 +80,40 @@ export default function BasicTable() {
           ))}
         </TableBody> */}
         <TableBody>
-          <TableCell align="right" className="cell">
-            Cell
-          </TableCell>
-          <TableCell align="right" className="cell">
-            Cell
-          </TableCell>
-          <TableCell align="right" className="cell">
-            Cell
-          </TableCell>
-          <TableCell align="right" className="cell">
-            Cell
-          </TableCell>
-          <TableCell align="right" className="cell">
-            Cell
-          </TableCell>
-          <TableCell align="right" className="cell">
-            Cell
-          </TableCell>
-          <TableCell align="right" className="cell">
-            Cell
-          </TableCell>
-          <TableCell align="right" className="cell">
-            Cell
-          </TableCell>
+          <TableRow>
+            <TableCell align="center" className="cell" style={{ padding: 24 }}>
+              <TimerIcon style={{ color: 'white' }} />
+              <Typography noWrap>Last Minute</Typography>
+            </TableCell>
+            <TableCell align="center" className="cell" style={{ padding: 24 }}>
+              <SportsSoccerIcon style={{ color: 'white' }} />
+              <Typography noWrap>Football</Typography>
+            </TableCell>
+            <TableCell align="center" className="cell" style={{ padding: 24 }}>
+              <HorseIcon style={{ color: 'white' }} />
+              <Typography noWrap>Horse Racing</Typography>
+            </TableCell>
+            <TableCell align="center" className="cell" style={{ padding: 24 }}>
+              <SportsMotorsportsIcon style={{ color: 'white' }} />
+              <Typography noWrap>F1</Typography>
+            </TableCell>
+            <TableCell align="center" className="cell" style={{ padding: 24 }}>
+              <MotorcycleIcon style={{ color: 'white' }} />
+              <Typography noWrap>Moto GP</Typography>
+            </TableCell>
+            <TableCell align="center" className="cell" style={{ padding: 24 }}>
+              <SportsBasketballIcon style={{ color: 'white' }} />
+              <Typography noWrap>Basketball</Typography>
+            </TableCell>
+            <TableCell align="center" className="cell" style={{ padding: 24 }}>
+              <SportsMmaIcon style={{ color: 'white' }} />
+              <Typography noWrap>MMAg</Typography>
+            </TableCell>
+            <TableCell align="center" className="cell" style={{ padding: 24 }}>
+              <SportsTennisIcon style={{ color: 'white' }} />
+              <Typography noWrap>Tennis</Typography>
+            </TableCell>
+          </TableRow>
         </TableBody>
       </Table>
     </TableContainer>

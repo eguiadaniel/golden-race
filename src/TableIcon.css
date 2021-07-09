@@ -1,3 +1,18 @@
 .cell {
-  background-color: rgba(218, 145, 145, 0.537);
+  background-color: #254cac;
+  /* padding: 10px; */
+}
+
+.cell p {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.overlow {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
