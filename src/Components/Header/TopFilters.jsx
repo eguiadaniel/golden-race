@@ -11,9 +11,33 @@ import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import SortByAlphaIcon from '@material-ui/icons/SortByAlpha';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 
+// const useStyles = makeStyles({
+//   TableContainer: {
+//     borderRadius: 0,
+//     maxWidth: 1280,
+//     marginTop: 0,
+//     marginRight: 'auto',
+//     marginBottom: 0,
+//     marginLeft: 'auto'
+//   },
+//   table: {
+//     minWidth: 350,
+//     height: 20
+//   },
+//   cell: {
+//     // padding: 50,
+//     // background: 'red'
+//   }
+// });
+
 const useStyles = makeStyles({
   box: {
-    backgroundColor: '#254cac'
+    backgroundColor: '#254cac',
+    maxWidth: 1280,
+    marginTop: 0,
+    marginRight: 'auto',
+    marginBottom: 0,
+    marginLeft: 'auto'
   },
   container: {
     display: 'flex',

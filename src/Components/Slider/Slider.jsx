@@ -13,15 +13,6 @@ function Slider({ data }) {
   console.log(data);
   console.log(data[0].image);
 
-  const navigate = (increment) => {
-    this.setState({
-      index: Math.min(
-        Math.max(this.state.index + increment, 0),
-        this.props.pictures.length - 1
-      )
-    });
-  };
-
   return (
     <div className="slider">
       <div
@@ -34,7 +25,7 @@ function Slider({ data }) {
             currImg > 0 && setCurrImg(currImg - 1);
           }}
         >
-          <ArrowBackIosIcon />
+          <ArrowBackIosIcon style={{ fontSize: 30, padding: 5 }} />
         </div>
         <div className="center">
           <div className="message">
@@ -55,7 +46,7 @@ function Slider({ data }) {
             currImg < data.length - 1 && setCurrImg(currImg + 1);
           }}
         >
-          <ArrowForwardIosIcon />
+          <ArrowForwardIosIcon style={{ fontSize: 30, padding: 5 }} />
         </div>
         {/* <img src={data[currImg].image} alt=""></img> */}
       </div>

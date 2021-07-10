@@ -1,6 +1,8 @@
 .slider {
   /* background-color: tomato; */
   height: 230px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .sliderInner {

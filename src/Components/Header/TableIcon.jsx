@@ -29,8 +29,13 @@ import F1Icon from './Icons/F1Icon';
 import './TableIcon.css';
 
 const useStyles = makeStyles({
-  paper: {
-    borderRadius: 0
+  TableContainer: {
+    borderRadius: 0,
+    maxWidth: 1280,
+    marginTop: 0,
+    marginRight: 'auto',
+    marginBottom: 0,
+    marginLeft: 'auto'
   },
   table: {
     minWidth: 350,
@@ -58,7 +63,7 @@ export default function BasicTable() {
   const classes = useStyles();
 
   return (
-    <TableContainer component={Paper} className={classes.paper}>
+    <TableContainer component={Paper} className={classes.TableContainer}>
       <Table className={(classes.table, 'overflow')} aria-label="simple table">
         {/* <TableHead>
           <TableRow>
