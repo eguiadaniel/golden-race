@@ -1,0 +1,28 @@
+.slider {
+  /* background-color: tomato; */
+  height: 230px;
+}
+
+.sliderInner {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  padding-top: 24px;
+}
+
+.message .MuiTypography-h5 {
+  font-weight: 800;
+}
+.message .MuiTypography-h6 {
+  background-color: #ffe682;
+}
