@@ -26,3 +26,28 @@
 .message .MuiTypography-h6 {
   background-color: #ffe682;
 }
+
+.left {
+  color: white;
+  flex: 5%;
+  height: 100%;
+  /* background-color: rgba(3, 3, 3, 0.041); */
+  display: grid;
+  place-items: center;
+}
+.center {
+  flex: 80%;
+  height: 100%;
+  /* flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  padding-top: 24px; */
+}
+.right {
+  color: white;
+  flex: 5%;
+  height: 100%;
+  /* background-color: rgba(3, 3, 3, 0.041); */
+  display: grid;
+  place-items: center;
+}

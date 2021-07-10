@@ -16,6 +16,12 @@ const SliderData = [
     highlighted: 'Get a 25€ Card',
     paragraph: 'bringing any friend',
     image: 'https://i.ibb.co/Fz9Prq8/slider-basket.png'
+  },
+  {
+    header: 'Prueba Maria',
+    highlighted: 'yeeeeeeah',
+    paragraph: 'bringing any friend',
+    image: 'https://i.ibb.co/Fz9Prq8/slider-basket.png'
   }
 ];
 
