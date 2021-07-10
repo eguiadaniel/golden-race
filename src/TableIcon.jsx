@@ -8,10 +8,10 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
+import Typography from '@material-ui/core/Typography';
+
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
-
-import Typography from '@material-ui/core/Typography';
 import DeleteIcon from '@material-ui/icons/Delete';
 import Timer from '@material-ui/icons/Timer';
 import SportsSoccerIcon from '@material-ui/icons/SportsSoccer';
@@ -29,6 +29,9 @@ import F1Icon from './Icons/F1Icon';
 import './TableIcon.css';
 
 const useStyles = makeStyles({
+  paper: {
+    borderRadius: 0
+  },
   table: {
     minWidth: 350,
     height: 20
@@ -55,7 +58,7 @@ export default function BasicTable() {
   const classes = useStyles();
 
   return (
-    <TableContainer component={Paper} className="overflow">
+    <TableContainer component={Paper} className={classes.paper}>
       <Table className={(classes.table, 'overflow')} aria-label="simple table">
         {/* <TableHead>
           <TableRow>
@@ -107,7 +110,7 @@ export default function BasicTable() {
             </TableCell>
             <TableCell align="center" className="cell" style={{ padding: 24 }}>
               <SportsMmaIcon style={{ color: 'white' }} />
-              <Typography noWrap>MMAg</Typography>
+              <Typography noWrap>MMA</Typography>
             </TableCell>
             <TableCell align="center" className="cell" style={{ padding: 24 }}>
               <SportsTennisIcon style={{ color: 'white' }} />
