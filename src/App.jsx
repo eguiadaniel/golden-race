@@ -6,6 +6,7 @@ import TopFilters from './Components/Header/TopFilters';
 import Slider from './Components/Slider/Slider';
 import CardContainer from './Components/Card/CardContainer';
 import CardFeatured from './Components/Card/CardFeatured';
+import CallToAction from './Components/CallToAction/CallToAction';
 
 import SliderData from './Components/Slider/SliderData';
 import CardData from './Components/Card/CardData.json';
@@ -25,6 +26,7 @@ function App() {
       <TableIcon />
       <Slider data={SliderData} />
       <CardFeatured sports={featuredSports} />
+      <CallToAction />
       <CardContainer sports={notFeaturedSports} />
     </div>
   );
