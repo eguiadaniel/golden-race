@@ -37,7 +37,7 @@ function CardContainer({ sports }) {
             <CardItem
               key={sport.title}
               sport={sport}
-              width={{ xs: 12, sm: 6, md: 3 }}
+              width={{ xs: 12, sm: 12, md: 12 }}
             ></CardItem>
           );
         })}

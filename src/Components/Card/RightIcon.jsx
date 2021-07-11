@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaHorseHead, FaDog } from 'react-icons/fa';
 // import Foo from './components/Foo';
 // import Bar from './components/Bar';
 
@@ -19,10 +20,18 @@ const leftIconComponents = {
 
 const RightIcon = ({ item }) => {
   //   let icon = item.leftIcon;
-  if (item.rightIcon === 'england') {
-    return <EnglandIcon fill1="white" fill2="red" />;
-  } else if (item.rightIcon === 'spain') {
-    return <SpainIcon fill1="gold" fill2="red" />;
+  if (item.rightIcon === 'horse') {
+    return (
+      <p style={{ textAlign: 'left' }}>
+        <FaHorseHead /> {item.participants}
+      </p>
+    );
+  } else if (item.rightIcon === 'dog') {
+    return (
+      <p style={{ textAlign: 'left' }}>
+        <FaDog /> {item.participants}
+      </p>
+    );
   } else if (item.rightIcon === 'champions') {
     return <ChampionsIcon />;
   } else return <span>12</span>;

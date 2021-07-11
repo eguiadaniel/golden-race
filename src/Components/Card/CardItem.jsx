@@ -24,7 +24,9 @@ const useStyles = makeStyles({
     textAlign: 'left'
   },
   image: {
-    minHeight: 200
+    minHeight: 300,
+    objectPosition: 'top',
+    objectFit: 'cover'
   }
 });
 // const width = { xs: 12, sm: 6, md: 3 };
@@ -36,8 +38,8 @@ function CardItem({ sport, width }) {
   //     const width = { xs: 12, sm: 6, md: 3 };
   //   }
 
-  // console.log('---------------CardItem----------');
-  // console.log(sport);
+  console.log('---------------CardItem----------');
+  console.log(sport);
 
   const classes = useStyles();
   return (
@@ -54,6 +56,7 @@ function CardItem({ sport, width }) {
           <Card className="" elevation={4}>
             <CardActionArea>
               <CardMedia
+                className={classes.image}
                 component="img"
                 alt={sport.title}
                 height="250"

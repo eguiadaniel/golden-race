@@ -20,7 +20,7 @@ const leftIconComponents = {
 const LeftIcon = ({ item }) => {
   //   let icon = item.leftIcon;
   if (item.leftIcon === 'england') {
-    return <EnglandIcon fill1="white" fill2="red" />;
+    return <EnglandIcon fill1="#f5f5f5" fill2="red" />;
   } else if (item.leftIcon === 'spain') {
     return <SpainIcon fill1="gold" fill2="red" />;
   } else if (item.leftIcon === 'champions') {

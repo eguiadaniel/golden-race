@@ -1,5 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import './CardList.css';
+
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -7,6 +9,12 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
+import IconButton from '@material-ui/core/IconButton';
+
+import DeleteIcon from '@material-ui/icons/Delete';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+
+import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 
 import LeftIcon from './LeftIcon';
 import RightIcon from './RightIcon';
@@ -18,6 +26,10 @@ const useStyles = makeStyles((theme) => ({
     // width: '100%',
     // maxWidth: 360,
     backgroundColor: theme.palette.background.paper
+  },
+  label: {
+    fontSize: 8,
+    textTransform: 'capitalize'
   }
 }));
 
@@ -46,9 +58,17 @@ export default function CardList({ list }) {
                         <LeftIcon item={item} />
                       </ListItemIcon>
                     )}
-                    <ListItemText primary={item.title} />
-
-                    <RightIcon item={item} />
+                    <ListItemText
+                      className="listItemText"
+                      primary={item.title}
+                      secondary={'item.secondary'}
+                    />
+                    {item.rightIcon && <RightIcon item={item} />}
+                    <ListItemSecondaryAction>
+                      <IconButton edge="end" aria-label="delete">
+                        <ArrowForwardIosIcon />
+                      </IconButton>
+                    </ListItemSecondaryAction>
                   </ListItem>
                   <Divider />
                 </>

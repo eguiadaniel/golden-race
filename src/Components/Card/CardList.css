@@ -1,0 +1,10 @@
+.listItemText > span {
+  /* color: tomato !important; */
+  font-size: 14px;
+}
+.listItemText > p {
+  color: rgb(122, 122, 122) !important;
+  font-size: 12px;
+}
+
+/* MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock */

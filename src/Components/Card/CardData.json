@@ -1,12 +1,13 @@
 {
   "sports": [
     {
+      "featured": "true",
       "title": "Football",
       "image": "https://resources.premierleague.com/premierleague/photo/2016/09/28/c535bc90-78f5-48d5-95b3-14f214de3e60/GettyImages-589081908.jpg",
       "list": [
         { "title": "England League", "leftIcon": "england" },
         { "title": "Spain League", "leftIcon": "spain" },
-        { "title": "Champions Lague", "leftIcon": "champions" }
+        { "title": "Euro Champions", "leftIcon": "champions" }
       ],
       "button": "More Football",
       "width": "full"
@@ -104,14 +105,9 @@
       "title": "Harrijasotzaile",
       "image": "https://erran.tok-md.com/argazkiak/JNJ/Inaxio_perurena_308.jpg",
       "button": "More Harrijasotzaile",
-      "width": "full"
-    },
-    {
-      "title": "Pelota mano",
-      "image": "https://static.diariovasco.com/www/multimedia/201911/27/media/cortadas/parejas-pelota-kReG--1248x770@Diario%20Vasco.jpg",
-      "button": "More Pelota mano",
       "width": "half"
     },
+
     {
       "title": "Cesta punta ",
       "image": "https://i.pinimg.com/originals/bb/de/5b/bbde5bc4aafd57c2e9fc9d0ef8c64799.jpg",
