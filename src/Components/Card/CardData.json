@@ -3,14 +3,22 @@
     {
       "title": "Football",
       "image": "https://resources.premierleague.com/premierleague/photo/2016/09/28/c535bc90-78f5-48d5-95b3-14f214de3e60/GettyImages-589081908.jpg",
-      "list": ["England League", "Spain League", "Euro Champions"],
+      "list": [
+        { "title": "England League", "leftIcon": "england" },
+        { "title": "Spain League", "leftIcon": "spain" },
+        { "title": "Champions Lague", "leftIcon": "champions" }
+      ],
       "button": "More Football",
       "width": "full"
     },
     {
       "title": "Horse Racing",
       "image": "https://www.2irecruit.co.uk/wp-content/uploads/2016/06/race-744105_1920.jpg",
-      "list": ["Dubai Racecourse", "Tokyo Royal State", "London Meadows"],
+      "list": [
+        { "title": "Dubai Racecourse", "leftIcon": "england" },
+        { "title": "Tokyo Royal State", "leftIcon": "spain" },
+        { "title": "London Meadows", "leftIcon": "champions" }
+      ],
       "button": "More Horse Racing",
       "width": "full"
     },
@@ -18,9 +26,9 @@
       "title": "Greyhounds",
       "image": "https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/1180/cached.offlinehbpl.hbpl.co.uk/news/NST/GreyhoundRacing-20150603114733250.jpg",
       "list": [
-        "London stadium",
-        "Santa Monica Stadium",
-        "Golden Palace Stadium"
+        { "title": "London stadium", "leftIcon": "england" },
+        { "title": "Santa Monica Stadium", "leftIcon": "spain" },
+        { "title": "Golden Palace Stadium", "leftIcon": "champions" }
       ],
       "button": "More Greyhounds",
       "width": "full"
@@ -46,14 +54,22 @@
     {
       "title": "Baseball",
       "image": "https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Frumbunter.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2018%2F08%2F1272836845-850x560.jpeg",
-      "list": ["England League", "Spain League", "Euro Champions"],
+      "list": [
+        { "title": "Dubai Racecourse", "leftIcon": "england" },
+        { "title": "Tokyo Royal State", "leftIcon": "spain" },
+        { "title": "London Meadows", "leftIcon": "champions" }
+      ],
       "button": "More Football",
       "width": "full"
     },
     {
       "title": "NFL",
       "image": "https://www.sportfair.it/wp-content/uploads/2020/09/NFL-1.jpg",
-      "list": ["Dubai Racecourse", "Tokyo Royal State", "London Meadows"],
+      "list": [
+        { "title": "Dubai Racecourse", "leftIcon": "england" },
+        { "title": "Tokyo Royal State", "leftIcon": "spain" },
+        { "title": "London Meadows", "leftIcon": "champions" }
+      ],
       "button": "More Horse Racing",
       "width": "full"
     },
@@ -61,9 +77,9 @@
       "title": "Aizkolaris",
       "image": "https://static3.elcorreo.com/www/multimedia/201910/27/media/MM-aizkolari/AIZKORA-13.jpg",
       "list": [
-        "London stadium",
-        "Santa Monica Stadium",
-        "Golden Palace Stadium"
+        { "title": "London stadium", "leftIcon": "england" },
+        { "title": "Santa Monica Stadium", "leftIcon": "spain" },
+        { "title": "Golden Palace Stadium", "leftIcon": "champions" }
       ],
       "button": "More Aizkolaris",
       "width": "full"

@@ -36,8 +36,8 @@ function CardItem({ sport, width }) {
   //     const width = { xs: 12, sm: 6, md: 3 };
   //   }
 
-  console.log('---------------CardItem----------');
-  console.log(sport);
+  // console.log('---------------CardItem----------');
+  // console.log(sport);
 
   const classes = useStyles();
   return (
@@ -76,7 +76,7 @@ function CardItem({ sport, width }) {
                     <ArrowForwardIosIcon />
                   </Box>
                 </Box>
-                <CardList />
+                <CardList list={sport.list} />
                 {/* <Typography variant="body2" color="textSecondary" component="p">
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
             across all continents except Antarctica

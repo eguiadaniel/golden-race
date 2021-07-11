@@ -13,7 +13,7 @@ const useStyles = makeStyles({
 });
 
 function CardContainer({ data }) {
-  console.log(data);
+  // console.log(data);
 
   const classes = useStyles();
 
