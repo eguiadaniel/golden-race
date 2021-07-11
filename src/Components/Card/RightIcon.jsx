@@ -17,15 +17,15 @@ const leftIconComponents = {
 //   bar: Bar
 // };
 
-const LeftIcon = ({ item }) => {
+const RightIcon = ({ item }) => {
   //   let icon = item.leftIcon;
-  if (item.leftIcon === 'england') {
+  if (item.rightIcon === 'england') {
     return <EnglandIcon fill1="white" fill2="red" />;
-  } else if (item.leftIcon === 'spain') {
+  } else if (item.rightIcon === 'spain') {
     return <SpainIcon fill1="gold" fill2="red" />;
-  } else if (item.leftIcon === 'champions') {
+  } else if (item.rightIcon === 'champions') {
     return <ChampionsIcon />;
-  } else return <span></span>;
+  } else return <span>12</span>;
 };
 
-export default LeftIcon;
+export default RightIcon;

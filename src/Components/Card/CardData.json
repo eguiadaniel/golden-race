@@ -15,9 +15,17 @@
       "title": "Horse Racing",
       "image": "https://www.2irecruit.co.uk/wp-content/uploads/2016/06/race-744105_1920.jpg",
       "list": [
-        { "title": "Dubai Racecourse", "leftIcon": "england" },
-        { "title": "Tokyo Royal State", "leftIcon": "spain" },
-        { "title": "London Meadows", "leftIcon": "champions" }
+        {
+          "title": "Dubai Racecourse",
+          "rightIcon": "horse",
+          "participants": 12
+        },
+        {
+          "title": "Tokyo Royal State",
+          "rightIcon": "horse",
+          "participants": 8
+        },
+        { "title": "London Meadows", "rightIcon": "horse", "participants": 6 }
       ],
       "button": "More Horse Racing",
       "width": "full"
@@ -26,9 +34,17 @@
       "title": "Greyhounds",
       "image": "https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/1180/cached.offlinehbpl.hbpl.co.uk/news/NST/GreyhoundRacing-20150603114733250.jpg",
       "list": [
-        { "title": "London stadium", "leftIcon": "england" },
-        { "title": "Santa Monica Stadium", "leftIcon": "spain" },
-        { "title": "Golden Palace Stadium", "leftIcon": "champions" }
+        { "title": "London stadium", "rightIcon": "dog", "participants": 10 },
+        {
+          "title": "Santa Monica Stadium",
+          "rightIcon": "dog",
+          "participants": 10
+        },
+        {
+          "title": "Golden Palace Stadium",
+          "rightIcon": "dog",
+          "participants": 9
+        }
       ],
       "button": "More Greyhounds",
       "width": "full"

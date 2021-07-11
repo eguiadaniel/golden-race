@@ -9,6 +9,7 @@ import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
 
 import LeftIcon from './LeftIcon';
+import RightIcon from './RightIcon';
 
 import ReactCountryFlag from 'react-country-flag';
 
@@ -40,11 +41,14 @@ export default function CardList({ list }) {
               return (
                 <>
                   <ListItem button>
-                    <ListItemIcon>
-                      <LeftIcon item={item} />
-                    </ListItemIcon>
-                    {/* {item.title} */}
+                    {item.leftIcon && (
+                      <ListItemIcon>
+                        <LeftIcon item={item} />
+                      </ListItemIcon>
+                    )}
                     <ListItemText primary={item.title} />
+
+                    <RightIcon item={item} />
                   </ListItem>
                   <Divider />
                 </>
