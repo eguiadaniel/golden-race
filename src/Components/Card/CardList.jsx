@@ -8,9 +8,14 @@ import Divider from '@material-ui/core/Divider';
 import InboxIcon from '@material-ui/icons/Inbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
 
+import ReactCountryFlag from 'react-country-flag';
+import EnglandIcon from './Icon/EnglandIcon';
+import SpainIcon from './Icon/SpainIcon';
+import ChampionsIcon from './Icon/ChampionsIcon';
+
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
+    // width: '100%',
     // maxWidth: 360,
     backgroundColor: theme.palette.background.paper
   }
@@ -28,25 +33,25 @@ export default function SimpleList() {
       <List component="nav" aria-label="main mailbox folders">
         <ListItem button>
           <ListItemIcon>
-            <InboxIcon />
+            <EnglandIcon fill1="white" fill2="red" />
           </ListItemIcon>
-          <ListItemText primary="Inbox" />
+          <ListItemText primary="England League" />
         </ListItem>
+        <Divider />
         <ListItem button>
           <ListItemIcon>
-            <DraftsIcon />
+            <SpainIcon fill1="yellow" fill2="red" />
           </ListItemIcon>
-          <ListItemText primary="Drafts" />
+          <ListItemText primary="Spain League" />
         </ListItem>
-      </List>
-      <Divider />
-      <List component="nav" aria-label="secondary mailbox folders">
+        <Divider />
         <ListItem button>
-          <ListItemText primary="Trash" />
+          <ListItemIcon>
+            <ChampionsIcon />
+          </ListItemIcon>
+          <ListItemText primary="Champions League" />
         </ListItem>
-        <ListItemLink href="#simple-list">
-          <ListItemText primary="Spam" />
-        </ListItemLink>
+        <Divider />
       </List>
     </div>
   );
