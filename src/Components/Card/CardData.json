@@ -4,13 +4,15 @@
       "title": "Football",
       "image": "https://resources.premierleague.com/premierleague/photo/2016/09/28/c535bc90-78f5-48d5-95b3-14f214de3e60/GettyImages-589081908.jpg",
       "list": ["England League", "Spain League", "Euro Champions"],
-      "button": "More Football"
+      "button": "More Football",
+      "width": "full"
     },
     {
       "title": "Horse Racing",
       "image": "https://www.2irecruit.co.uk/wp-content/uploads/2016/06/race-744105_1920.jpg",
       "list": ["Dubai Racecourse", "Tokyo Royal State", "London Meadows"],
-      "button": "More Horse Racing"
+      "button": "More Horse Racing",
+      "width": "full"
     },
     {
       "title": "Greyhounds",
@@ -20,22 +22,69 @@
         "Santa Monica Stadium",
         "Golden Palace Stadium"
       ],
-      "button": "More Greyhounds"
+      "button": "More Greyhounds",
+      "width": "full"
     },
     {
       "title": "Motor",
       "image": "https://d3dup97zc5osq9.cloudfront.net/production/12334/conversions/motoGP-medium.jpg",
-      "button": "More Motor"
+      "button": "More Motor",
+      "width": "full"
     },
     {
       "title": "Fight Sports",
       "image": "https://www.fightsports.tv/wp-content/uploads/download-2.jpg",
-      "button": "More Fight Sports"
+      "button": "More Fight Sports",
+      "width": "half"
     },
     {
       "title": "Basketball",
       "image": "https://lasentinel.net/wp-content/uploads/sites/5/2018/11/AP_18323008165524.jpg",
-      "button": "More Basketball"
+      "button": "More Basketball",
+      "width": "half"
+    },
+    {
+      "title": "Baseball",
+      "image": "https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Frumbunter.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2018%2F08%2F1272836845-850x560.jpeg",
+      "list": ["England League", "Spain League", "Euro Champions"],
+      "button": "More Football",
+      "width": "full"
+    },
+    {
+      "title": "NFL",
+      "image": "https://www.sportfair.it/wp-content/uploads/2020/09/NFL-1.jpg",
+      "list": ["Dubai Racecourse", "Tokyo Royal State", "London Meadows"],
+      "button": "More Horse Racing",
+      "width": "full"
+    },
+    {
+      "title": "Aizkolaris",
+      "image": "https://static3.elcorreo.com/www/multimedia/201910/27/media/MM-aizkolari/AIZKORA-13.jpg",
+      "list": [
+        "London stadium",
+        "Santa Monica Stadium",
+        "Golden Palace Stadium"
+      ],
+      "button": "More Aizkolaris",
+      "width": "full"
+    },
+    {
+      "title": "Harrijasotzaile",
+      "image": "https://erran.tok-md.com/argazkiak/JNJ/Inaxio_perurena_308.jpg",
+      "button": "More Harrijasotzaile",
+      "width": "full"
+    },
+    {
+      "title": "Pelota mano",
+      "image": "https://static.diariovasco.com/www/multimedia/201911/27/media/cortadas/parejas-pelota-kReG--1248x770@Diario%20Vasco.jpg",
+      "button": "More Pelota mano",
+      "width": "half"
+    },
+    {
+      "title": "Cesta punta ",
+      "image": "https://i.pinimg.com/originals/bb/de/5b/bbde5bc4aafd57c2e9fc9d0ef8c64799.jpg",
+      "button": "More Cesta punta ",
+      "width": "half"
     }
   ]
 }

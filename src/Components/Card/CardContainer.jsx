@@ -7,7 +7,8 @@ import CardItem from './CardItem';
 
 const useStyles = makeStyles({
   container: {
-    padding: 20
+    padding: 20,
+    backgroundColor: '#dad8d8'
   }
 });
 
@@ -22,12 +23,24 @@ function CardContainer({ data }) {
         container
         direction="row"
         justifyContent="center"
-        alignItems="center"
+        alignItems="top"
         spacing={2}
       >
-        {data.sports.map((sport) => (
-          <CardItem key={sport.title} sport={sport}></CardItem>
-        ))}
+        {data.sports.map((sport) => {
+          return sport.width === 'half' ? (
+            <CardItem
+              key={sport.title}
+              sport={sport}
+              width={{ xs: 6, sm: 3, md: 3 }}
+            ></CardItem>
+          ) : (
+            <CardItem
+              key={sport.title}
+              sport={sport}
+              width={{ xs: 12, sm: 6, md: 3 }}
+            ></CardItem>
+          );
+        })}
       </Grid>
     </Container>
   );
