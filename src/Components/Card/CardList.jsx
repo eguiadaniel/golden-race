@@ -48,7 +48,7 @@ export default function CardList({ list }) {
                     secondary={item.secondary}
                   />
                   {item.rightIcon && <RightIcon item={item} />}
-                  <ListItemSecondaryAction>
+                  <ListItemSecondaryAction style={{ right: 0 }}>
                     <IconButton>
                       <ArrowForwardIosIcon />
                     </IconButton>
