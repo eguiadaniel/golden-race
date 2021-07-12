@@ -7,11 +7,8 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
-import InboxIcon from '@material-ui/icons/Inbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
 import IconButton from '@material-ui/core/IconButton';
 
-import DeleteIcon from '@material-ui/icons/Delete';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
@@ -19,12 +16,8 @@ import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import LeftIcon from './LeftIcon';
 import RightIcon from './RightIcon';
 
-import ReactCountryFlag from 'react-country-flag';
-
 const useStyles = makeStyles((theme) => ({
   root: {
-    // width: '100%',
-    // maxWidth: 360,
     backgroundColor: theme.palette.background.paper
   },
   label: {
@@ -33,47 +26,37 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function ListItemLink(props) {
-  return <ListItem button component="a" {...props} />;
-}
-
 export default function CardList({ list }) {
   const classes = useStyles();
 
-  console.log('-----CardList-----');
-  console.log('list', list);
   return (
     <>
       {list && (
         <div className={classes.root}>
           <List component="nav" aria-label="main mailbox folders">
             {list.map((item) => {
-              console.log('------CardList-Item------');
-              console.log(item);
               return (
-                <>
-                  <ListItem button>
-                    {item.leftIcon && (
-                      <ListItemIcon>
-                        <LeftIcon item={item} />
-                      </ListItemIcon>
-                    )}
-                    <ListItemText
-                      className="listItemText"
-                      primary={item.title}
-                      secondary={item.secondary}
-                    />
-                    {item.rightIcon && <RightIcon item={item} />}
-                    <ListItemSecondaryAction>
-                      <IconButton>
-                        <ArrowForwardIosIcon />
-                      </IconButton>
-                    </ListItemSecondaryAction>
-                  </ListItem>
-                  <Divider />
-                </>
+                <ListItem button key={item.title}>
+                  {item.leftIcon && (
+                    <ListItemIcon>
+                      <LeftIcon item={item} />
+                    </ListItemIcon>
+                  )}
+                  <ListItemText
+                    className="listItemText"
+                    primary={item.title}
+                    secondary={item.secondary}
+                  />
+                  {item.rightIcon && <RightIcon item={item} />}
+                  <ListItemSecondaryAction>
+                    <IconButton>
+                      <ArrowForwardIosIcon />
+                    </IconButton>
+                  </ListItemSecondaryAction>
+                </ListItem>
               );
             })}
+            <Divider />
           </List>
         </div>
       )}

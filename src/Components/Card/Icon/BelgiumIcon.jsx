@@ -12,8 +12,6 @@ const BelgiumIcon = ({ fill1, fill2, fill3 }) => {
       x="0px"
       y="0px"
       viewBox="0 0 50 50"
-      //   style={fontSize:"5px"}
-      // xml:space="preserve"
     >
       <g>
         <path
@@ -22,12 +20,10 @@ const BelgiumIcon = ({ fill1, fill2, fill3 }) => {
         />
         <polygon
           fill={fill2}
-          class="st2"
           points="33,1.5 33,55.15 24,60.87 15,55.15 15,1.5 	"
         />
         <path
           fill={fill3}
-          class="st1"
           d="M46,15v21.48c0,1.72-0.23,3.4-0.68,5.02c-1.23,4.48-4.09,8.42-8.11,10.98L33,55.15V1.5h13V15z"
         />
       </g>

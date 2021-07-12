@@ -1,4 +1,4 @@
-import { Grid, Paper, Box } from '@material-ui/core';
+import { Grid, Box } from '@material-ui/core';
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -22,7 +22,6 @@ const useStyles = makeStyles({
     lineHeight: 1.334,
     letterSpacing: 0,
     textAlign: 'left'
-    // color: 'tomato'
   },
   image: {
     minHeight: 300,
@@ -31,30 +30,13 @@ const useStyles = makeStyles({
   },
   card: {}
 });
-// const width = { xs: 12, sm: 6, md: 3 };
 
 function CardItem({ sport, width }) {
-  //   if ((sport.width = 'half')) {
-  //     const width = { xs: 6, sm: 4, md: 2 };
-  //   } else {
-  //     const width = { xs: 12, sm: 6, md: 3 };
-  //   }
-
-  console.log('---------------CardItem----------');
-  console.log(sport);
-
   const classes = useStyles();
   return (
     <>
       {sport.width && (
-        <Grid
-          // className="xs-flex-basis"
-          item
-          md={width.md}
-          sm={width.sm}
-          xs={width.xs}
-          // style={{ maxWidth: '100%' }}
-        >
+        <Grid item md={width.md} sm={width.sm} xs={width.xs}>
           <Card className={classes.card} elevation={4}>
             <CardActionArea>
               <CardMedia
@@ -66,8 +48,8 @@ function CardItem({ sport, width }) {
                 title={sport.title}
               />
               <CardContent>
-                <Box display="flex" p={1} bgcolor="">
-                  <Box p={1} flexGrow={1} bgcolor="">
+                <Box display="flex" p={1} bgcolor="" className={classes.box}>
+                  <Box py={0} flexGrow={1} bgcolor="">
                     <Typography
                       gutterBottom
                       variant="h5"
@@ -78,16 +60,12 @@ function CardItem({ sport, width }) {
                     </Typography>
                   </Box>
                   {!sport.list && (
-                    <Box p={1} bgcolor="">
+                    <Box py={0} bgcolor="">
                       <ArrowForwardIosIcon />
                     </Box>
                   )}
                 </Box>
                 <CardList list={sport.list} />
-                {/* <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography> */}
               </CardContent>
             </CardActionArea>
             <CardActions style={{ justifyContent: 'flex-end' }}>

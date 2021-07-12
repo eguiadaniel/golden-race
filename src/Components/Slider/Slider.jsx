@@ -1,21 +1,12 @@
 import React, { useState } from 'react';
 
 import './Slider.css';
-import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import PlayArrowIconLeft from '@material-ui/icons/PlayArrow';
 
 function Slider({ data }) {
   const [currImg, setCurrImg] = useState(0);
-
-  console.log(data);
-  console.log(data[0].image);
-
   return (
     <>
       <div className="slider">
@@ -54,16 +45,7 @@ function Slider({ data }) {
           >
             <PlayArrowIconLeft style={{ fontSize: 30, padding: 5 }} />
           </div>
-          {/* <img src={data[currImg].image} alt=""></img> */}
         </div>
-        {/* <Box style={{ zIndex: 99 }}>
-          {data.map((item, index, arr) => (
-            {arr.indexOf(item) === index && (
-              <span style={{ fontSize: '2em', color: 'grey' }}> · </span> :  <span style={{ fontSize: '2em', color: 'red' }}> · </span>
-
-            )}
-          ))}
-        </Box> */}
       </div>
     </>
   );

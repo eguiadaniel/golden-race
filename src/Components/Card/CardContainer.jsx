@@ -13,20 +13,15 @@ const useStyles = makeStyles({
 });
 
 function CardContainer({ sports }) {
-  console.log(sports);
-
   const classes = useStyles();
 
   return (
-    <Container
-      // maxWidth="lg"
-      className={classes.container}
-    >
+    <Container className={classes.container}>
       <Grid
         container
         direction="row"
         justifyContent="center"
-        alignItems="top"
+        alignItems="center"
         spacing={2}
       >
         {sports.map((sport) => {

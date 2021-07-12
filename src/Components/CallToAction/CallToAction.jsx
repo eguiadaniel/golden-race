@@ -20,24 +20,10 @@ const useStyles = makeStyles({
   box: {
     padding: 20,
     borderRadius: 5
-    // margin: '20px'
-  },
-  image: {}
-  // title: {
-  //   color: 'white',
-  //   fontSize: '3em',
-  //   fontWeight: 900,
-  //   paddingTop: '10%'
-  // },
-  // subtitle: {
-  //   color: 'yellow',
-  //   fontSize: '6em',
-  //   fontWeight: 900,
-  //   paddingBottom: '10%'
-  // }
+  }
 });
 
-export default function ButtonBases() {
+export default function CallToAction() {
   const classes = useStyles();
 
   return (
@@ -46,15 +32,11 @@ export default function ButtonBases() {
         className={classes.box}
         style={{
           padding: 0
-          //   width: '100%',
-          //   height: '250px',
-          //   borderRadius: 10
         }}
       >
         <ButtonBase
           style={{
             width: '100%',
-            // border: 'solid',
             borderRadius: 15,
             backgroundImage: `url(${image.url})`,
             backgroundPosition: 'top',
@@ -70,7 +52,6 @@ export default function ButtonBases() {
               display: 'flex',
               flexDirection: 'column',
               width: '100%',
-              // height: '250px',
               flexWrap: 'nowrap',
               justifyContent: 'space-evenly',
               alignContent: 'center',
@@ -79,9 +60,9 @@ export default function ButtonBases() {
               lineHeight: 1
             }}
           >
-            <Typography className='title'>
+            <Typography className="title">
               Win Jackpot
-              <Typography component='span' className='subtitle'>
+              <Typography component="span" className="subtitle">
                 €3,210.50
               </Typography>
             </Typography>

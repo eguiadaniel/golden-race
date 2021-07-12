@@ -12,8 +12,6 @@ const SpainIcon = ({ fill1, fill2, fill3 }) => {
       x="0px"
       y="0px"
       viewBox="0 0 50 55"
-      //   style={fontSize:"5px"}
-      // xml:space="preserve"
     >
       <g>
         <rect x="2" y="1.5" fill={fill1} width="44" height="17.5" />

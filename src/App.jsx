@@ -1,5 +1,4 @@
 import './App.css';
-import { Box, Container } from '@material-ui/core';
 
 import TableIcon from './Components/Header/TableIcon';
 import TopFilters from './Components/Header/TopFilters';
@@ -16,10 +15,7 @@ function App() {
 
   let featuredSports = sports.filter((item) => item.featured);
   let notFeaturedSports = sports.filter((item) => !item.featured);
-  // console.log(SliderData);
-  // console.log(sports);
-  console.log(featuredSports);
-  console.log(notFeaturedSports);
+
   return (
     <div className="App">
       <TopFilters />

@@ -1,39 +1,15 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-
-import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 
-import DeleteIcon from '@material-ui/icons/Delete';
-import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import SortByAlphaIcon from '@material-ui/icons/SortByAlpha';
 import AssignmentIcon from '@material-ui/icons/Assignment';
-
-// const useStyles = makeStyles({
-//   TableContainer: {
-//     borderRadius: 0,
-//     maxWidth: 1280,
-//     marginTop: 0,
-//     marginRight: 'auto',
-//     marginBottom: 0,
-//     marginLeft: 'auto'
-//   },
-//   table: {
-//     minWidth: 350,
-//     height: 20
-//   },
-//   cell: {
-//     // padding: 50,
-//     // background: 'red'
-//   }
-// });
 
 const useStyles = makeStyles({
   box: {
     backgroundColor: '#254cac',
-    // maxWidth: 1280,
     marginTop: 0,
     marginRight: 'auto',
     marginBottom: 0,
@@ -78,7 +54,6 @@ function TopFilters() {
           className={classes.button}
           size="medium"
           variant="contained"
-          // fullWidth
           disableElevation
           startIcon={<SortByAlphaIcon />}
           onClick={() => {
@@ -91,7 +66,6 @@ function TopFilters() {
           className={classes.button}
           size="medium"
           variant="contained"
-          // color="primary"
           disableElevation
           startIcon={<AssignmentIcon />}
         >

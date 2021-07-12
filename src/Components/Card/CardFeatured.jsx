@@ -8,7 +8,6 @@ import CardItem from './CardItem';
 const useStyles = makeStyles({
   featuredContainer: {
     padding: '0px 20px 20px 20px'
-    // backgroundColor: '#dad8d8'
   },
   cardFeatured: {
     boxShadow: '0px -2px 16px 7px #00000040',
@@ -17,8 +16,6 @@ const useStyles = makeStyles({
 });
 
 function CardFeatured({ sports }) {
-  console.log(sports);
-
   const classes = useStyles();
 
   return (
@@ -27,7 +24,7 @@ function CardFeatured({ sports }) {
         container
         direction="row"
         justifyContent="center"
-        alignItems="top"
+        alignItems="center"
         spacing={2}
       >
         {sports.map((sport) => {

@@ -4,16 +4,10 @@ import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
 
 import Typography from '@material-ui/core/Typography';
 
-import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
-import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
-import DeleteIcon from '@material-ui/icons/Delete';
-import Timer from '@material-ui/icons/Timer';
 import SportsSoccerIcon from '@material-ui/icons/SportsSoccer';
 import SportsBasketballIcon from '@material-ui/icons/SportsBasketball';
 import SportsMotorsportsIcon from '@material-ui/icons/SportsMotorsports';
@@ -23,15 +17,12 @@ import SportsTennisIcon from '@material-ui/icons/SportsTennis';
 
 import HorseIcon from './Icons/HorseIcon';
 import TimerIcon from './Icons/TimerIcon';
-import EuroIcon from './Icons/EuroIcon';
-import F1Icon from './Icons/F1Icon';
 
 import './TableIcon.css';
 
 const useStyles = makeStyles({
   TableContainer: {
     borderRadius: 0,
-    // maxWidth: 1280,
     marginTop: 0,
     marginRight: 'auto',
     marginBottom: 0,
@@ -52,22 +43,8 @@ const useStyles = makeStyles({
   },
   cell: {
     borderBottom: '1px solid pink !important;'
-    // padding: 50,
-    // background: 'red'
   }
 });
-
-// function createData(name, calories, fat, carbs, protein) {
-//   return { name, calories, fat, carbs, protein };
-// }
-
-// const rows = [
-//   createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-//   createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-//   createData('Eclair', 262, 16.0, 24, 6.0),
-//   createData('Cupcake', 305, 3.7, 67, 4.3),
-//   createData('Gingerbread', 356, 16.0, 49, 3.9)
-// ];
 
 export default function BasicTable() {
   const classes = useStyles();

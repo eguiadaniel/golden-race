@@ -12,8 +12,6 @@ const ChampionsIcon = ({ fill1, fill2 }) => {
       x="0px"
       y="0px"
       viewBox="0 0 50 55"
-      //   style={fontSize:"5px"}
-      // xml:space="preserve"
     >
       <g>
         <path
