@@ -1,0 +1,34 @@
+.title {
+  color: white;
+  font-size: calc(2vw + 2vh + 1vmin) !important;
+  /* font-size: 2vh !important; */
+  font-weight: 900 !important;
+  padding-top: 3vh;
+  text-align: left;
+  line-height: 1 !important;
+  text-shadow: 3px 4px 7px #4040407d;
+}
+.subtitle {
+  color: yellow;
+  font-size: calc(3vw + 3vh + 2vmin) !important;
+  font-weight: 900 !important;
+  padding-bottom: 2vh;
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .title {
+    padding-top: 4vh;
+    font-size: calc(2vw + 1vh + 1vmin) !important;
+  }
+  .subtitle {
+    padding-bottom: 4vh;
+    font-size: calc(3vw + 4vh + 2vmin) !important;
+    /* color: tomato; */
+  }
+}
+/* xs extra-pequeño: 0px.
+sm pequeño: 600px.
+md, mediano: 960px.
+lg, grande: 1280px.
+xl extra-grande: 1920px. */

@@ -4,6 +4,8 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 import { Container, Box } from '@material-ui/core';
 
+import '../CallToAction/CallToAction.css';
+
 const image = {
   url: '/assets/jackpot_base.png',
   title: 'Jackpot',
@@ -20,19 +22,19 @@ const useStyles = makeStyles({
     borderRadius: 5
     // margin: '20px'
   },
-  image: {},
-  title: {
-    color: 'white',
-    fontSize: '3em',
-    fontWeight: 900,
-    paddingTop: '10%'
-  },
-  subtitle: {
-    color: 'yellow',
-    fontSize: '6em',
-    fontWeight: 900,
-    paddingBottom: '10%'
-  }
+  image: {}
+  // title: {
+  //   color: 'white',
+  //   fontSize: '3em',
+  //   fontWeight: 900,
+  //   paddingTop: '10%'
+  // },
+  // subtitle: {
+  //   color: 'yellow',
+  //   fontSize: '6em',
+  //   fontWeight: 900,
+  //   paddingBottom: '10%'
+  // }
 });
 
 export default function ButtonBases() {
@@ -55,11 +57,12 @@ export default function ButtonBases() {
             // border: 'solid',
             borderRadius: 15,
             backgroundImage: `url(${image.url})`,
-            backgroundPosition: 'center right',
+            backgroundPosition: 'top',
             backgroundColor: '#008ff8',
             backgroundRepeat: 'no-repeat',
             boxShadow:
-              '0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)'
+              '0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)',
+            backgroundSize: 'cover'
           }}
         >
           <Box
@@ -67,18 +70,21 @@ export default function ButtonBases() {
               display: 'flex',
               flexDirection: 'column',
               width: '100%',
-              height: '250px',
-              display: 'flex',
+              // height: '250px',
               flexWrap: 'nowrap',
               justifyContent: 'space-evenly',
-              flexDirection: 'column',
               alignContent: 'center',
               alignItems: 'flex-start',
-              paddingLeft: '10%'
+              paddingLeft: 40,
+              lineHeight: 1
             }}
           >
-            <Typography className={classes.title}>Win Jackpot</Typography>
-            <Typography className={classes.subtitle}>€3,210.50</Typography>
+            <Typography className='title'>
+              Win Jackpot
+              <Typography component='span' className='subtitle'>
+                €3,210.50
+              </Typography>
+            </Typography>
           </Box>
         </ButtonBase>
       </Box>

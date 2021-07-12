@@ -4,6 +4,14 @@
   max-width: 1280px;
   margin: 0 auto;
   background-color: #dad8d8;
+  /* background-color: #95c8ff;*/
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(218, 216, 216, 1) 0%,
+    rgba(149, 200, 255, 1) 100%
+  ); */
 }
 
 .sliderInner {
@@ -11,9 +19,28 @@
   width: 100%;
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
 }
+
+.image {
+  height: 100%;
+  width: 100%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+/* width: 100%;
+border-radius: 15px;
+background-image: url(/assets/jackpot_base.png);
+background-position: center top;
+background-color: rgb(0, 143, 248);
+background-repeat: no-repeat;
+box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+background-size: cover;
+} */
 
 .message {
   display: flex;
@@ -21,13 +48,38 @@
   align-items: flex-start;
   justify-content: end;
   padding-top: 24px;
+  width: 60%;
 }
 
-.message .MuiTypography-h5 {
+.message h5 {
+  text-align: left;
   font-weight: 800;
+  letter-spacing: 2px;
+  font-size: calc(2vw + 2vh + 1vmin);
+  color: #ffffff;
+  line-height: 1;
+  padding-bottom: 1.4vh;
+
+  text-shadow: 3px 4px 7px #4040407d;
 }
-.message .MuiTypography-h6 {
-  background-color: #ffe682;
+.message h6 {
+  background-color: #fdf989;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: calc(1vw + 1vh + 1vmin);
+  border: solid 2px #fbff01;
+  border-radius: 7px;
+}
+
+.message p {
+  padding-top: 0.6vh;
+  width: 70%;
+  text-align: left;
+  font-size: calc(1vw + 1vh + 1vmin);
+  color: #414141;
+  height: 100%;
 }
 
 .left {
@@ -41,10 +93,9 @@
 .center {
   flex: 80%;
   height: 100%;
-  /* flex-direction: column;
-  align-items: flex-start;
-  justify-content: end;
-  padding-top: 24px; */
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 .right {
   color: white;
@@ -55,14 +106,62 @@
   place-items: center;
 }
 
-@media only screen and (min-device-width: 500px) {
-  .sliderInner {
-    /* height: 100%; */
-    /* width: 100%; */
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    display: flex;
-    /* background-image: url(/public/assets/slider_base.png); */
+@media only screen and (max-device-width: 500px) {
+  .center {
+    align-items: flex-start;
   }
 }
+
+@media only screen and (min-device-width: 600px) {
+  .message h5 {
+    font-size: calc((2vw + 2vh + 1vmin) / 1.2);
+  }
+  .message h6 {
+    font-size: calc((1vw + 1vh + 1vmin) / 1.2);
+  }
+
+  .message p {
+    font-size: calc((1vw + 1vh + 1vmin) / 1.2);
+  }
+  .sliderInner {
+    background-size: 50vh;
+  }
+}
+
+@media only screen and (min-device-width: 960px) {
+  .message h5 {
+    font-size: calc((2vw + 2vh + 1vmin) / 1.3);
+  }
+  .message h6 {
+    font-size: calc((1vw + 1vh + 1vmin) / 1.3);
+  }
+
+  .message p {
+    font-size: calc((1vw + 1vh + 1vmin) / 1.3);
+  }
+  .sliderInner {
+    background-size: 60vh;
+  }
+}
+
+@media only screen and (min-device-width: 1280px) {
+  .message h5 {
+    font-size: calc((2vw + 2vh + 1vmin) / 1.4);
+  }
+  .message h6 {
+    font-size: calc((1vw + 1vh + 1vmin) / 1.4);
+  }
+
+  .message p {
+    font-size: calc((1vw + 1vh + 1vmin) / 1.4);
+  }
+  .sliderInner {
+    background-size: 70vh;
+  }
+}
+
+/* xs extra-pequeño: 0px.
+sm pequeño: 600px.
+md, mediano: 960px.
+lg, grande: 1280px.
+xl extra-grande: 1920px. */

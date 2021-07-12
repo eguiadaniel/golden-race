@@ -14,34 +14,34 @@ function Slider({ data }) {
   console.log(data[0].image);
 
   return (
-    <div className="slider">
+    <div className='slider'>
       <div
-        className="sliderInner"
+        className='sliderInner'
         style={{ backgroundImage: `url(${data[currImg].image})` }}
       >
         <div
-          className="left"
+          className='left'
           onClick={() => {
             currImg > 0 && setCurrImg(currImg - 1);
           }}
         >
           <ArrowBackIosIcon style={{ fontSize: 30, padding: 5 }} />
         </div>
-        <div className="center">
-          <div className="message">
-            <Typography variant="h5" color="initial">
+        <div className='center'>
+          <div className='message'>
+            <Typography variant='h5' color='initial'>
               {data[currImg].header}
             </Typography>
-            <Typography variant="h6" color="initial">
+            <Typography variant='h6' color='initial'>
               {data[currImg].highlighted}
             </Typography>
-            <Typography variant="subtitle2" gutterBottom color="initial">
+            <Typography variant='body1' gutterBottom color='initial'>
               {data[currImg].paragraph}
             </Typography>
           </div>
         </div>
         <div
-          className="right"
+          className='right'
           onClick={() => {
             currImg < data.length - 1 && setCurrImg(currImg + 1);
           }}
