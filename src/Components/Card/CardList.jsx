@@ -61,7 +61,7 @@ export default function CardList({ list }) {
                     <ListItemText
                       className="listItemText"
                       primary={item.title}
-                      secondary={'item.secondary'}
+                      secondary={item.secondary}
                     />
                     {item.rightIcon && <RightIcon item={item} />}
                     <ListItemSecondaryAction>

@@ -17,11 +17,12 @@ import './CardItem.css';
 
 const useStyles = makeStyles({
   title: {
-    fontSize: '1.3rem',
+    fontSize: '1rem',
     fontWeight: 900,
     lineHeight: 1.334,
     letterSpacing: 0,
     textAlign: 'left'
+    // color: 'tomato'
   },
   image: {
     minHeight: 300,
@@ -75,9 +76,11 @@ function CardItem({ sport, width }) {
                       {sport.title}
                     </Typography>
                   </Box>
-                  <Box p={1} bgcolor="">
-                    <ArrowForwardIosIcon />
-                  </Box>
+                  {!sport.list && (
+                    <Box p={1} bgcolor="">
+                      <ArrowForwardIosIcon />
+                    </Box>
+                  )}
                 </Box>
                 <CardList list={sport.list} />
                 {/* <Typography variant="body2" color="textSecondary" component="p">

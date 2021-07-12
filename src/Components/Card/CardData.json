@@ -5,9 +5,21 @@
       "title": "Football",
       "image": "https://resources.premierleague.com/premierleague/photo/2016/09/28/c535bc90-78f5-48d5-95b3-14f214de3e60/GettyImages-589081908.jpg",
       "list": [
-        { "title": "England League", "leftIcon": "england" },
-        { "title": "Spain League", "leftIcon": "spain" },
-        { "title": "Euro Champions", "leftIcon": "champions" }
+        {
+          "title": "England League",
+          "secondary": "Manchester United - Chelsea",
+          "leftIcon": "england"
+        },
+        {
+          "title": "Spain League",
+          "secondary": "Real Sociedad - Athletic",
+          "leftIcon": "spain"
+        },
+        {
+          "title": "Euro Champions",
+          "secondary": "Bayern Munich - Paris SG",
+          "leftIcon": "champions"
+        }
       ],
       "button": "More Football",
       "width": "full"
@@ -72,9 +84,9 @@
       "title": "Baseball",
       "image": "https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Frumbunter.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2018%2F08%2F1272836845-850x560.jpeg",
       "list": [
-        { "title": "Dubai Racecourse", "leftIcon": "england" },
-        { "title": "Tokyo Royal State", "leftIcon": "spain" },
-        { "title": "London Meadows", "leftIcon": "champions" }
+        { "title": "Luzhniki Stadium", "leftIcon": "russia" },
+        { "title": "Dodger Stadium", "leftIcon": "usa" },
+        { "title": "Al Dhafra Stadium", "leftIcon": "emirates" }
       ],
       "button": "More Football",
       "width": "full"
@@ -83,9 +95,26 @@
       "title": "NFL",
       "image": "https://www.sportfair.it/wp-content/uploads/2020/09/NFL-1.jpg",
       "list": [
-        { "title": "Dubai Racecourse", "leftIcon": "england" },
-        { "title": "Tokyo Royal State", "leftIcon": "spain" },
-        { "title": "London Meadows", "leftIcon": "champions" }
+        {
+          "title": "Allegiant Stadium",
+          "secondary": "Miami Dolphins - New York Jets",
+          "leftIcon": "usa"
+        },
+        {
+          "title": "Lumen Field",
+          "secondary": "Denver Broncos - Dallas Cowboys",
+          "leftIcon": "usa"
+        },
+        {
+          "title": "Nisupu Bowl",
+          "secondary": "New York Giants - Philadelphia Eagles",
+          "leftIcon": "japan"
+        },
+        {
+          "title": "King Baudouin Stadium",
+          "secondary": "‎Club Brugge KV - ‎RSC Anderlecht ·",
+          "leftIcon": "belgium"
+        }
       ],
       "button": "More Horse Racing",
       "width": "full"
@@ -94,17 +123,29 @@
       "title": "Aizkolaris",
       "image": "https://static3.elcorreo.com/www/multimedia/201910/27/media/MM-aizkolari/AIZKORA-13.jpg",
       "list": [
-        { "title": "London stadium", "leftIcon": "england" },
-        { "title": "Santa Monica Stadium", "leftIcon": "spain" },
-        { "title": "Golden Palace Stadium", "leftIcon": "champions" }
+        {
+          "title": "Frontón Jai Alai",
+          "secondary": "Iñaki Perurena",
+          "leftIcon": "spain"
+        },
+        {
+          "title": "Yokohama Stadium",
+          "secondary": "Mieltxo Saralegi ",
+          "leftIcon": "japan"
+        },
+        {
+          "title": "Trinquet Bayonne",
+          "secondary": "Idoia Etxeberria",
+          "leftIcon": "france"
+        }
       ],
       "button": "More Aizkolaris",
       "width": "full"
     },
     {
-      "title": "Harrijasotzaile",
+      "title": "Harri Jasotzaile",
       "image": "https://erran.tok-md.com/argazkiak/JNJ/Inaxio_perurena_308.jpg",
-      "button": "More Harrijasotzaile",
+      "button": "More Harri Jasotzaile",
       "width": "half"
     },
 
