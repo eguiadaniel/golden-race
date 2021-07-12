@@ -6,7 +6,7 @@ My name is Daniel Eguia and I am a Frontend Developer and Designer from Málaga,
 
 This project was created using React, JSX, HTML and CSS. I have also used Photoshop for slider images and Illustrator to create SVG icons.
 
-### The latest Github version is deployed on [https://daniel-golden-test-netlify.app](https://daniel-golden-test.netlify.app).
+### The latest Github version is deployed on [https://eguiadaniel-golden-test.netlify.app](https://eguiadaniel-golden-test.netlify.app).
 
 ---
 
