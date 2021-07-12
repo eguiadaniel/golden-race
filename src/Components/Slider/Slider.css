@@ -16,30 +16,20 @@
 
 .sliderInner {
   height: 100%;
-  width: 100%;
+  width: 95%;
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
 }
 
-.image {
+/* .image {
   height: 100%;
   width: 100%;
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-}
-
-/* width: 100%;
-border-radius: 15px;
-background-image: url(/assets/jackpot_base.png);
-background-position: center top;
-background-color: rgb(0, 143, 248);
-background-repeat: no-repeat;
-box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
-background-size: cover;
 } */
 
 .message {
@@ -91,7 +81,7 @@ background-size: cover;
   place-items: center;
 }
 .center {
-  flex: 80%;
+  flex: 65%;
   height: 100%;
   display: flex;
   align-content: center;
@@ -106,13 +96,13 @@ background-size: cover;
   place-items: center;
 }
 
-@media only screen and (max-device-width: 500px) {
+@media (max-device-width: 500px) {
   .center {
     align-items: flex-start;
   }
 }
 
-@media only screen and (min-device-width: 600px) {
+@media (min-device-width: 600px) {
   .message h5 {
     font-size: calc((2vw + 2vh + 1vmin) / 1.2);
   }
@@ -127,8 +117,23 @@ background-size: cover;
     background-size: 50vh;
   }
 }
+@media (min-device-width: 600px) and (orientation: landscape) {
+  .message h5 {
+    font-size: calc((2vw + 2vh + 1vmin) / 1);
+  }
+  .message h6 {
+    font-size: calc((1vw + 1vh + 1vmin) / 1);
+  }
 
-@media only screen and (min-device-width: 960px) {
+  .message p {
+    font-size: calc((1vw + 1vh + 1vmin) / 1);
+  }
+  .sliderInner {
+    background-size: 140vh;
+  }
+}
+
+@media (min-device-width: 960px) {
   .message h5 {
     font-size: calc((2vw + 2vh + 1vmin) / 1.3);
   }
@@ -144,7 +149,7 @@ background-size: cover;
   }
 }
 
-@media only screen and (min-device-width: 1280px) {
+@media (min-device-width: 1280px) {
   .message h5 {
     font-size: calc((2vw + 2vh + 1vmin) / 1.4);
   }

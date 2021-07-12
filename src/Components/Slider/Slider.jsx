@@ -7,6 +7,8 @@ import Box from '@material-ui/core/Box';
 
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import PlayArrowIconLeft from '@material-ui/icons/PlayArrow';
 
 function Slider({ data }) {
   const [currImg, setCurrImg] = useState(0);
@@ -27,7 +29,9 @@ function Slider({ data }) {
               currImg > 0 && setCurrImg(currImg - 1);
             }}
           >
-            <ArrowBackIosIcon style={{ fontSize: 30, padding: 5 }} />
+            <PlayArrowIcon
+              style={{ fontSize: 30, padding: 5, transform: 'rotate(180deg)' }}
+            />
           </div>
           <div className="center">
             <div className="message">
@@ -48,7 +52,7 @@ function Slider({ data }) {
               currImg < data.length - 1 && setCurrImg(currImg + 1);
             }}
           >
-            <ArrowForwardIosIcon style={{ fontSize: 30, padding: 5 }} />
+            <PlayArrowIconLeft style={{ fontSize: 30, padding: 5 }} />
           </div>
           {/* <img src={data[currImg].image} alt=""></img> */}
         </div>
