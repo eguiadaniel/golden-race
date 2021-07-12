@@ -21,7 +21,7 @@ function CardContainer({ sports }) {
         container
         direction="row"
         justifyContent="center"
-        alignItems="center"
+        alignItems="top"
         spacing={2}
       >
         {sports.map((sport) => {

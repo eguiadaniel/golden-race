@@ -1,27 +1,16 @@
 # Hello, friends! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
-My name is Daniel Eguia and I´m a Frontend Developer and Designer from Málaga, Spain. This repository is a technical challenge done for as part of mhy interview process. I did it using React, HTML and CSS and the Material UI framework.
-
-Hope you like it.
-
-![](https://img.shields.io/static/v1?&message=<HTML>&color=<COLOR>)
-![](https://img.shields.io/static/v1?&message=<CSS>&color=<BLUE>)
-
-![](https://img.shields.io/badge/<WORD_ON_LEFT>-<WORD_ON_RIGHT>-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
-
-# Getting Started with Golden Test Website
-
 ==========================================
 
-This project was created by Daniel Eguia using [React].
+My name is Daniel Eguia and I´m a Frontend Developer and Designer from Málaga, Spain. This repository is a technical challenge done as part of mhy interview process.
 
-The latest Github version is deployed on [https://daniel-golden-test-netlify.app](https://daniel-golden-test-netlify.app).
+This project was created by Daniel Eguia using React, JSX, HTML and CSS. I´va also used Photoshop for slider images and Illustrator to create SVG icons.
 
-## Steps to run the project in your local machine
+### The latest Github version is deployed on [https://daniel-golden-test-netlify.app](https://daniel-golden-test-netlify.app).
 
 ---
 
-In the project directory, you can run:
+## Steps to run the project in your local machine
 
 - Clone this repository to your local machine:
 
@@ -35,10 +24,21 @@ In the project directory, you can run:
 
         npm install
 
-- Run the code:
+- Run the code in development mode:
         npm start
 
-### `npm start`
 
-Runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+---
+
+## Process and Achievements
+
+I´ve tryed to approach this project so every item could be reusable making the app more scalable.
+
+### Cards
+
+- Created a generic Card component
+
+1. dadfasdf
+2. dsfdfsaadfs
