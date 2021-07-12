@@ -65,7 +65,7 @@ export default function CardList({ list }) {
                     />
                     {item.rightIcon && <RightIcon item={item} />}
                     <ListItemSecondaryAction>
-                      <IconButton edge="end" aria-label="delete">
+                      <IconButton>
                         <ArrowForwardIosIcon />
                       </IconButton>
                     </ListItemSecondaryAction>

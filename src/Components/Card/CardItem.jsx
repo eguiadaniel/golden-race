@@ -28,7 +28,8 @@ const useStyles = makeStyles({
     minHeight: 300,
     objectPosition: 'top',
     objectFit: 'cover'
-  }
+  },
+  card: {}
 });
 // const width = { xs: 12, sm: 6, md: 3 };
 
@@ -54,7 +55,7 @@ function CardItem({ sport, width }) {
           xs={width.xs}
           // style={{ maxWidth: '100%' }}
         >
-          <Card className="" elevation={4}>
+          <Card className={classes.card} elevation={4}>
             <CardActionArea>
               <CardMedia
                 className={classes.image}
@@ -89,7 +90,7 @@ function CardItem({ sport, width }) {
           </Typography> */}
               </CardContent>
             </CardActionArea>
-            <CardActions>
+            <CardActions style={{ justifyContent: 'flex-end' }}>
               <Button size="small" color="primary">
                 {sport.button}
               </Button>

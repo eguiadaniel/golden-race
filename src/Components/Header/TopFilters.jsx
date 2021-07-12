@@ -33,7 +33,7 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 const useStyles = makeStyles({
   box: {
     backgroundColor: '#254cac',
-    maxWidth: 1280,
+    // maxWidth: 1280,
     marginTop: 0,
     marginRight: 'auto',
     marginBottom: 0,

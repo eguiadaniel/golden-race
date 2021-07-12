@@ -18,7 +18,10 @@ function CardContainer({ sports }) {
   const classes = useStyles();
 
   return (
-    <Container maxWidth="lg" className={classes.container}>
+    <Container
+      // maxWidth="lg"
+      className={classes.container}
+    >
       <Grid
         container
         direction="row"

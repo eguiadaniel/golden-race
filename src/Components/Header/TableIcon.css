@@ -1,5 +1,6 @@
 .cell {
   background-color: #254cac;
+  border-bottom: 1px solid rgb(37 76 172) !important;
   /* padding: 10px; */
 }
 

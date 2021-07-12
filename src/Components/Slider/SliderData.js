@@ -15,7 +15,7 @@ const SliderData = [
     header: 'Bring and Win',
     highlighted: 'Get a 25€ Card',
     paragraph: 'bringing any friend',
-    image: 'https://i.ibb.co/SBDsMHm/slider-car2.png'
+    image: 'https://i.ibb.co/2hJrjTJ/slider-car3.png'
   }
   // {
   //   header: 'Prueba Maria',
@@ -27,9 +27,13 @@ const SliderData = [
 
 export default SliderData;
 
+{
+  /* <a href="https://ibb.co/W5CXcLC"><img src="https://i.ibb.co/2hJrjTJ/slider-car3.png" alt="slider-car3" border="0"></a>
+
 // <a href="https://ibb.co/8Y580vM"><img src="https://i.ibb.co/2ZtKyVq/slider-base.png" alt="slider-base" border="0"></a>
 // <a href="https://ibb.co/wSRVY4g"><img src="https://i.ibb.co/BytbwB3/slider-basket.png" alt="slider-basket" border="0"></a>
-// <a href="https://ibb.co/P58b17h"><img src="https://i.ibb.co/Vv8hM7S/slider-car.png" alt="slider-car" border="0"></a>
+// <a href="https://ibb.co/P58b17h"><img src="https://i.ibb.co/Vv8hM7S/slider-car.png" alt="slider-car" border="0"></a> */
+}
 
 {
   /* <a href="https://ibb.co/GdkyCJW"><img src="https://i.ibb.co/6ybzDZH/slider-basket.png" alt="slider-basket" border="0"></a>
