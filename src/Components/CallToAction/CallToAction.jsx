@@ -4,7 +4,7 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 import { Container, Box } from '@material-ui/core';
 
-import '../CallToAction/CallToAction.css';
+import '../CallToAction/CallToAction.scss';
 
 const image = {
   url: '/assets/jackpot_base.png',
@@ -13,7 +13,6 @@ const image = {
 };
 
 const useStyles = makeStyles({
-  root: {},
   container: {
     backgroundColor: '#dad8d8'
   },

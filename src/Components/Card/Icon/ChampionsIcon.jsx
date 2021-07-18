@@ -4,7 +4,7 @@ const ChampionsIcon = ({ fill1, fill2 }) => {
   return (
     <svg
       version="1.1"
-      id="EnclgandIcon"
+      id="Champions"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width="30px"

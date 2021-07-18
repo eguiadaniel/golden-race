@@ -1,6 +1,6 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import './CardList.css';
+
+import './CardList.scss';
 
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -10,35 +10,26 @@ import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 
 import LeftIcon from './LeftIcon';
 import RightIcon from './RightIcon';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    backgroundColor: theme.palette.background.paper
-  },
-  label: {
-    fontSize: 8,
-    textTransform: 'capitalize'
-  }
-}));
-
 export default function CardList({ list }) {
-  const classes = useStyles();
-
   return (
     <>
       {list && (
-        <div className={classes.root}>
-          <List component="nav" aria-label="main mailbox folders">
+        <div>
+          <List component="nav">
             {list.map((item) => {
               return (
                 <ListItem button key={item.title}>
                   {item.leftIcon && (
                     <ListItemIcon>
+                      {/* Custom component to render Icon flags and cups depending on data passed on CardData.json. 
+                          "leftIcon": "spain" or "leftIcon": "champions" renders diferent SVG that also contains color props 
+                          that can be passed.
+                      */}
                       <LeftIcon item={item} />
                     </ListItemIcon>
                   )}

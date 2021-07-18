@@ -13,8 +13,6 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 import CardList from './CardList';
 
-import './CardItem.css';
-
 const useStyles = makeStyles({
   title: {
     fontSize: '1rem',
@@ -27,17 +25,19 @@ const useStyles = makeStyles({
     minHeight: 300,
     objectPosition: 'top',
     objectFit: 'cover'
-  },
-  card: {}
+  }
 });
 
 function CardItem({ sport, width }) {
   const classes = useStyles();
   return (
     <>
+      {/* Conditional waiting for width value before rendering 
+        width value changes depending width prop passed on Card Container
+    */}
       {sport.width && (
         <Grid item md={width.md} sm={width.sm} xs={width.xs}>
-          <Card className={classes.card} elevation={4}>
+          <Card elevation={4}>
             <CardActionArea>
               <CardMedia
                 className={classes.image}
@@ -47,9 +47,9 @@ function CardItem({ sport, width }) {
                 image={sport.image}
                 title={sport.title}
               />
-              <CardContent>
-                <Box display="flex" p={1} bgcolor="" className={classes.box}>
-                  <Box py={0} flexGrow={1} bgcolor="">
+              <CardContent style={{ padding: 8 }}>
+                <Box display="flex" p={1}>
+                  <Box p={0} flexGrow={1}>
                     <Typography
                       gutterBottom
                       variant="h5"
@@ -59,8 +59,11 @@ function CardItem({ sport, width }) {
                       {sport.title}
                     </Typography>
                   </Box>
+
+                  {/* Conditional that renders arrow only if there is no list 
+                    If the data object has no list key theres nothing to render */}
                   {!sport.list && (
-                    <Box py={0} bgcolor="">
+                    <Box py={0}>
                       <ArrowForwardIosIcon />
                     </Box>
                   )}

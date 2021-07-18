@@ -25,7 +25,8 @@ This project was created using React, JSX, HTML and CSS. I have also used Photos
         npm install
 
 - Run the code in development mode:
-  npm start
+
+        npm start
 
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -45,18 +46,19 @@ I have tried to approach this project so the most important items were reusable 
 - Data drives which kind of icon is rendered: flag, dog or horse.
 - The width value on the JSON is used to render a "half" or "full" card on mobile and tablet devices.
 
+### Responsiveness and styles
+
+- All the cards are wrapped around a Grid component and the column width they get depending on the width prop and viewport size.
+- Slider and CTA font use calc function in CSS to dynamically define the font size.
+- For these two elements I have created custome media queries and classes in order to gain more control depending on the viewport and device orientation.
+- I´ve used SCSS, inline styles and CSS-In-Js to showcase different methodologies I´m familiar with.
+
 ### Flag Icons
 
 - I have created my own SVG files in Illustrator.
 - For each React Component created I have included fill color as props that I could later pass per country.
 - With an if else statement the specific flag is rendered per country.
 - It is flexible enough that one single design can be reused just changing the fill={red} to fill={white}
-
-### Responsiveness
-
-- All the cards are wrapped around a Grid component and the column width they get depending on the width prop and viewport size.
-- Slider and CTA font use calc function in CSS to dynamically define the font size.
-- For these two elements I have created custome media queries and classes in order to gain more control depending on the viewport and device orientation.
 
 ---
 

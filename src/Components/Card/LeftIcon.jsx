@@ -8,6 +8,10 @@ import USAIcon from './Icon/USAIcon';
 import JapanIcon from './Icon/JapanIcon';
 import BelgiumIcon from './Icon/BelgiumIcon';
 
+// Custom component with diferent conditionals that will render difernt SVG depending on data passed on CardData.json.
+// "leftIcon": "spain" or "leftIcon": "champions" renders diferent SVG that also contains color props that can be passed.
+// With the same Icon we can reproduce diferent flags if we change the fill property. Spain Icon works for both Spain and Russia.
+
 const LeftIcon = ({ item }) => {
   if (item.leftIcon === 'england') {
     return <EnglandIcon fill1="#f5f5f5" fill2="red" />;

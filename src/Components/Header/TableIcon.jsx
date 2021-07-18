@@ -18,7 +18,11 @@ import SportsTennisIcon from '@material-ui/icons/SportsTennis';
 import HorseIcon from './Icons/HorseIcon';
 import TimerIcon from './Icons/TimerIcon';
 
-import './TableIcon.css';
+// I´ve used SCSS so I could target paragraphs inside cell. Could not make it work as CSS In JSX
+
+import './TableIcon.scss';
+
+// CSS in JS using makeStyles custom React hook from Material UI
 
 const useStyles = makeStyles({
   TableContainer: {
@@ -40,9 +44,6 @@ const useStyles = makeStyles({
   table: {
     minWidth: 350,
     height: 20
-  },
-  cell: {
-    borderBottom: '1px solid pink !important;'
   }
 });
 
@@ -52,73 +53,38 @@ export default function BasicTable() {
   return (
     <TableContainer className={classes.TableContainer}>
       <TableContainer className={classes.TableContainerInner}>
-        <Table
-          className={(classes.table, 'overflow')}
-          aria-label="simple table"
-        >
+        <Table className={classes.table} aria-label="simple table">
           <TableBody>
             <TableRow>
-              <TableCell
-                align="center"
-                className="cell"
-                style={{ padding: 24 }}
-              >
+              <TableCell align="center" className="cell">
                 <TimerIcon style={{ color: 'white' }} />
                 <Typography noWrap>Last Minute</Typography>
               </TableCell>
-              <TableCell
-                align="center"
-                className="cell"
-                style={{ padding: 24 }}
-              >
+              <TableCell align="center" className="cell">
                 <SportsSoccerIcon style={{ color: 'white' }} />
                 <Typography noWrap>Football</Typography>
               </TableCell>
-              <TableCell
-                align="center"
-                className="cell"
-                style={{ padding: 24 }}
-              >
+              <TableCell align="center" className="cell">
                 <HorseIcon style={{ color: 'white' }} />
                 <Typography noWrap>Horse Racing</Typography>
               </TableCell>
-              <TableCell
-                align="center"
-                className="cell"
-                style={{ padding: 24 }}
-              >
+              <TableCell align="center" className="cell">
                 <SportsMotorsportsIcon style={{ color: 'white' }} />
                 <Typography noWrap>F1</Typography>
               </TableCell>
-              <TableCell
-                align="center"
-                className="cell"
-                style={{ padding: 24 }}
-              >
+              <TableCell align="center" className="cell">
                 <MotorcycleIcon style={{ color: 'white' }} />
                 <Typography noWrap>Moto GP</Typography>
               </TableCell>
-              <TableCell
-                align="center"
-                className="cell"
-                style={{ padding: 24 }}
-              >
+              <TableCell align="center" className="cell">
                 <SportsBasketballIcon style={{ color: 'white' }} />
                 <Typography noWrap>Basketball</Typography>
               </TableCell>
-              <TableCell
-                align="center"
-                className="cell"
-                style={{ padding: 24 }}
-              >
+              <TableCell align="center" className="cell">
                 <SportsMmaIcon style={{ color: 'white' }} />
                 <Typography noWrap>MMA</Typography>
               </TableCell>
-              <TableCell
-                align="center"
-                className="cell"
-                style={{ padding: 24 }}
-              >
+              <TableCell align="center" className="cell">
                 <SportsTennisIcon style={{ color: 'white' }} />
                 <Typography noWrap>Tennis</Typography>
               </TableCell>

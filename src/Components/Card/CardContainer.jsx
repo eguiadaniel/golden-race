@@ -24,6 +24,7 @@ function CardContainer({ sports }) {
         alignItems="top"
         spacing={2}
       >
+        {/* Conditional defining width props for objects with "full" or "half" in CardData.json */}
         {sports.map((sport) => {
           return sport.width === 'half' ? (
             <CardItem

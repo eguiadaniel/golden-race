@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.cell {
+  background-color: $color-primary;
+  border-bottom: 1px solid $color-primary !important;
+  padding: 24px !important;
+  p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+  }
+}

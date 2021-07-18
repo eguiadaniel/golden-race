@@ -7,6 +7,8 @@ import Button from '@material-ui/core/Button';
 import SortByAlphaIcon from '@material-ui/icons/SortByAlpha';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 
+// CSS in JS using makeStyles custom React hook from Material UI
+
 const useStyles = makeStyles({
   box: {
     backgroundColor: '#254cac',
@@ -56,8 +58,9 @@ function TopFilters() {
           variant="contained"
           disableElevation
           startIcon={<SortByAlphaIcon />}
+          // Function to be updated with Select for card filtering
           onClick={() => {
-            alert('clicked A-Z Virtual');
+            alert('Function to be updated with Select for card filtering');
           }}
         >
           Virtuals
